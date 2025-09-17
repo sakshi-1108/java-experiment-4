@@ -1,0 +1,17 @@
+public class Student {
+    String name;   
+    int roll_no;
+
+    public static void main(String[] args) {
+               System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+        Student student1 = new Student();  
+        student1.name = "John";
+        student1.roll_no = 2;
+
+        System.out.println("Name: " + student1.name);
+        System.out.println("Roll Number: " + student1.roll_no);
+    }
+}
