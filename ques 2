@@ -1,0 +1,20 @@
+public class Triangle {
+    public static void main(String[] args) {
+        
+        System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+        int a = 3, b = 4, c = 5;
+
+        // Perimeter 
+        int perimeter = a + b + c;
+
+        // Area by Heron's formula
+        double s = perimeter / 2.0; 
+        double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+        System.out.println("Perimeter of triangle: " + perimeter);
+        System.out.println("Area of triangle: " + area);
+    }
+}
