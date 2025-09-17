@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class Area {
+    public int length;
+    public int breadth;
+  //  constructor
+    public Area(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public int returnArea() {
+        return length * breadth;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+        // User input
+        System.out.print("Enter length: ");
+        int len = sc.nextInt();
+        System.out.print("Enter breadth: ");
+        int br = sc.nextInt();
+
+        Area rect = new Area(len, br);
+
+        System.out.println("Area of rectangle: " + rect.returnArea());
+
+        sc.close();
+    }
+}
